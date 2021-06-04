@@ -1,0 +1,346 @@
+@import "variables";
+
+.body {
+    font-family: 'Archivo', sans-serif;
+    // font-size: 3vw;
+}
+
+nav {
+    background-color: #FFFF;
+    color: black;
+
+    #search-box {
+        border-color: transparent;
+        width: 45%;
+        border: none;
+        background: #FFFF;
+
+        span {
+            background-color: #FFFF;
+            border: none;
+            color: gray;
+        }
+
+        input {
+            border: none;
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    .Reg-log {
+
+        color: black;
+        font-weight: bold;
+
+    }
+}
+
+.login-btn {
+    @include submit-style();
+    padding: 5px 44%;
+}
+
+.reg-btn {
+    @include submit-style();
+    padding: 5px 33.5%;
+}
+
+.links-rule {
+    text-decoration: none;
+    color: $login-btn-color;
+}
+
+
+#first-section {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 3%;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    #right-div {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    #left-div {
+
+        padding: 3% 5.4% 5% 5%;
+        height: max-content;
+
+        p {
+            font-size: 1em;
+            margin: 3% 0%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        button {
+            height: 16%;
+            width: max-content;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-radius: 5px;
+            border: white solid 1px;
+            background-color: transparent;
+            margin: 2% 0%;
+
+
+            &:hover {
+                background-color: $login-btn-color;
+                color: black;
+            }
+        }
+    }
+}
+
+/////////////////////////////////////////////////////first section//////////////////////////////////////////////////////
+#walla {
+    @include image-block(15.4%);
+    background-image: url("images/walla.jpg");
+}
+
+#whoosh {
+    @include image-block(15.4%);
+    background-image: url("images/whoosh.jpg");
+}
+
+#wind {
+    @include image-block(15.4%);
+    background-image: url("images/wind.jpg");
+}
+
+#footsteps {
+    @include image-block(15.4%);
+    background-image: url("images/footsteps.jpg");
+}
+
+#cartoon {
+    @include image-block(15.4%);
+    background-image: url("images/cartoon.jpg");
+}
+
+#drones {
+    @include image-block(15.4%);
+    background-image: url("images/drones.jpg");
+}
+
+#menus {
+    @include image-block(49%);
+    background-image: url("images/menus_and_interfaces.jpg");
+}
+
+#ambience {
+    @include image-block(49%);
+    background-image: url("images/ambience.jpg");
+}
+
+/////////////////////////////////////////////////////////////sub nav//////////////////////////////////////////////////
+
+#pills-tab {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.nav-btn {
+    color: #f3f3f3;
+    font-weight: bold;
+    &:hover{
+        background-color: #3ff3a8;
+        border-radius: 5px;
+        color: #333;
+    }
+    &:active {
+        background-color: #3ff3a8;
+        border-radius: 5px;
+        color: #333;
+    }
+
+}
+
+#vintage-anime {
+    @include image-block(24%);
+    background-image: url("images/vintage.jpg");
+}
+
+#futur-vehicles {
+    @include image-block(24%);
+    background-image: url("images/futuristic.jpg");
+}
+
+#worship {
+    @include image-block(24%);
+    background-image: url("images/worship.jpg");
+}
+
+#vibrations {
+    @include image-block(24%);
+    background-image: url("images/soundwaves.jpg");
+}
+
+.location-tags {
+    @extend %tags;
+}
+
+.tab-pane {
+    display: flex;
+}
+
+/////////////////////////////////////////////////////fourth section//////////////////////////////////////////////////////
+
+#tenet {
+    @include image-block(16%);
+    background-image: url("images/tenet.jpg");
+}
+
+#westworld {
+    @include image-block(16%);
+    background-image: url("images/westworld.jpg");
+}
+
+#the-revenant {
+    @include image-block(16%);
+    background-image: url("images/the_revenant.jpg");
+}
+
+#mad-max {
+    @include image-block(16%);
+    background-image: url("images/mad_max.jpg");
+}
+
+#black-swan {
+    @include image-block(16%);
+    background-image: url("images/black_swan.jpg");
+}
+
+#baby-driver {
+    @include image-block(16%);
+    background-image: url("images/baby_driver.jpg");
+}
+
+/////////////////////////////////////////////////////fifth section//////////////////////////////////////////////////////
+
+
+.statistics {
+    font-weight: bold;
+    line-height: 1.5em;
+
+    * {
+        font-weight: bold;
+    }
+
+    i {
+        font-size: 100px;
+    }
+
+    p {
+        color: gray;
+    }
+
+}
+
+/////////////////////////////////////////////////////footer section//////////////////////////////////////////////////////
+
+#footer-section {
+    background-color: black;
+    width: 100%;
+    height: auto;
+
+    #left-section {
+        padding: 20% 0 20% 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            opacity: 1;
+            font-weight: bold;
+            color: #F3f3f3;
+            font-size: 1.8em;
+        }
+    }
+
+    #right-section {
+        background-image: url('images/mixer.webp');
+        background-blend-mode: lighten;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        #brand-icons {
+
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: 10%;
+            grid-row-gap: 14%;
+            padding-left: 5%;
+            padding-top: 7%;
+            background-image: linear-gradient(to bottom,#0000003d,#000);
+            height: 100%;
+
+            .client {
+                opacity: 0.7;
+
+                img {
+                    height: 60%;
+                    width: 60%;
+                }
+            }
+        }
+
+
+    }
+
+    #bottom-section {
+        width: 100%;
+        padding: 30% 0 20% 0;
+
+        .subtitle {
+            font-weight: bold;
+            text-align: center;
+            color: #f3f3f3;
+            font-size: 2.7rem;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 3rem;
+            color: #3ff3a8;
+            font-weight: bold;
+
+            &:hover {
+                color: darken($color: #3ff3a8, $amount: 30%)
+            }
+        }
+    }
+
+    #last-section {
+        padding-bottom: 10%;
+        *{
+            text-align: center;
+        }
+        h5 {
+            color: #F3f3f3;
+        }
+        a {
+            color: gray;
+            text-decoration: none;
+            &:hover {
+                color: darken($color: gray, $amount: 10%);
+            }
+        }
+    }
+}

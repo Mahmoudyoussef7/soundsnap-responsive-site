@@ -1,0 +1,63 @@
+$login-btn-color:#52d9a0;
+
+ %tags {
+    background-color: #dae8ec;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+    &:hover {
+        background-color: #bfe4ee;
+    }
+}
+
+@mixin submit-style() {
+    background-color: $login-btn-color;
+    border-radius: 5px;
+    margin: 1% 12;
+    color: white;
+
+    &:hover {
+        background-color: darken($login-btn-color, 10%);
+        color: white;
+
+    }
+
+}
+
+@mixin image-block($w) {
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    
+    a {
+        color: #FFFF;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    &:hover {
+        background-image: none;
+        background-color: #a3b0c9;
+        cursor: pointer;
+
+        a {
+            color: #333;
+        }
+    }
+}
